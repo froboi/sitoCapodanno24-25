@@ -8,31 +8,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body background="bg.png" width="20%" height="20%">
     <div class="mobile-container">
         <div class="topnav">
-            <a href="#home" class="active">Logo</a>
+            <h4>Capodanno 2024/25</h4>
             <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#section1">Ora e luogo</a>
+                <a href="#section2"></a>
+                <a href="#section3">About</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
 
-        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+        <div id="section1" class="container-fluid bg-transparent text-white" style="padding:100px 20px;">
             <h1>Ora e Luogo</h1>
             <p>la festa si terrà a casa di Tommaso il 31 dicembre 2024</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2808.800245528177!2d7.603710075995486!3d45.25183197107131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDE1JzA2LjYiTiA3wrAzNicyMi42IkU!5e0!3m2!1sit!2sit!4v1735304440013!5m2!1sit!2sit" width="300" height="200" style="border:0; margin: 5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
-            <h1>Section 2</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <div id="section2" class="container-fluid bg-transparent" style="padding:100px 20px;">
+            <h1>Cosa mageremo</h1>
+            <p>l'idea iniziale era quella di andare a prendere delle pizze per poi mangiarle tutti asieme</p>
+        </div>
+
+        <div id="section3" class="container-fluid bg-transparent" style="padding:100px 20px;">
+            <h1>lista della spesa</h1>
+            <h3>diseguito trovere elencata la lista della spesa</h3>
+            <h4 style="margin-top: 30px;">Cibo</h4>
+            <ul>
+                <li>Patatine(classiche)</li>
+                <li>Stuzichi aperitivo</li>
+            </ul>
+
+            <h4>Bevande anacoliche</h4>
+            <ul>
+                <li>Coca cola (6)</li>
+                <li>Sprite (3)</li>
+                <li>Estatè pesca🍑 (3)</li>
+                <li>Estatè pesca🍋 (3)</li>
+                <li>Acqua </li>
+                <li>Red Bull (20)</li>
+            </ul>
+
+            <h4>Bevande alcoliche</h4>
+            <ul>
+                <li>Vodka alla pesca (1)</li>
+                <li>Vodka liscia (2)</li>
+                <li>rum (1)</li>
+                <li>gin (1)</li>
+                <li>amaro del capo</li>
+                <li>Birra beck's (4)</li>
+                <li>Birra Corona (10)</li>
+                <li>bollicine</li>
+            </ul>
         </div>
     </div>
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
 </body>
 </html>
