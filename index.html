@@ -10,18 +10,23 @@
 
 <body background="bg.png" width="20%" height="20%">
     <div class="mobile-container">
-        <div class="topnav">
-            <h4>Capodanno 2024/25</h4>
-            <div id="myLinks">
-                <a href="#section1">Ora e luogo</a>
-                <a href="#section2"></a>
-                <a href="#section3">About</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
 
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#section1">Ora e luogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section2">Cosa mangeremo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section3">Lista spesa</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          
         <div id="section1" class="container-fluid bg-transparent text-white" style="padding:100px 20px;">
             <h1>Ora e Luogo</h1>
             <p>la festa si terrà a casa di Tommaso il 31 dicembre 2024</p>
@@ -29,7 +34,7 @@
         </div>
 
         <div id="section2" class="container-fluid bg-transparent" style="padding:100px 20px;">
-            <h1>Cosa mageremo</h1>
+            <h1>Cosa mangeremo</h1>
             <p>l'idea iniziale era quella di andare a prendere delle pizze per poi mangiarle tutti asieme</p>
         </div>
 
@@ -65,17 +70,5 @@
             </ul>
         </div>
     </div>
-
-
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-    </script>
 </body>
 </html>
